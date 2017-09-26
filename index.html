@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<title>Elstat</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="8K1SKu0E+3e6IRryegrTprRUNAWDvrR2DZ2uEEu9jQgWRXgJ8dblx0n4dzJlzwJlEVTNPOiHcKtShObDBaysCw==" />
+<link rel="stylesheet" media="all" href="assets/application-8aad2e20ce94e9bb6f3da01c8c568f5005b2692263da70b22cea663b20fc9495.css" />
+<script src="assets/application-9e4c2856e6d9b77ee28e609b57d336dd03b00f802e4c2f2ecca542cb3e5613c0.js"></script>
+<script src="packs/application-c0c7c0cc7acfeebaa4b5.js"></script>
+
+</head>
+<body>
+<div class='layout' id='visualization'>
+<div class='title-bar'>
+<div class='title-bar-left'>
+<img src='assets/elstat_logo-770f45a10bf7d296490635da7c5c7596d93887f290451a494604d10b071fef5a.svg' width='30'>
+<span class='title-bar-title show-for-large'>
+Χαρτογράφηση ελληνικής ακαδημαϊκής παρουσίας
+</span>
+<span class='title-bar-title hide-for-large'>
+ΕΛΣΤΑΤ
+</span>
+</div>
+<div class='title-bar-right'>
+<a class='button' href='index.html#content'>πληροφορίες</a>
+</div>
+</div>
+<div class='map'></div>
+<div class='map-info-container'>
+<a class='reset button small'>καθαρισμός φίλτρων</a>
+<div class='hint'>πατήστε μια χώρα για να φιλτράρετε τα αποτελέσματα...</div>
+</div>
+<div class='timeline'></div>
+<div class='row-chart'></div>
+<div class='content' id='content'>
+<div id='line-chart'></div>
+<div class='row'>
+<div class='medium-3 columns'>
+<p class='text-center'>
+<img class='elstat-logo' src='assets/elstat_logo-770f45a10bf7d296490635da7c5c7596d93887f290451a494604d10b071fef5a.svg'>
+</p>
+</div>
+<div class='medium-9 columns'>
+<h1>Χαρτογράφηση ελληνικής ακαδημαϊκής παρουσίας</h1>
+<p class='lead justify'>
+Χαρτογράφηση και διαδραστική οπτικοποίηση της
+ελληνικής ακαδημαϊκής δραστηριότητας σε όλο το κόσμο για
+τα έτη 2008 - 2015.
+<br>
+Τα δεδομένα παρέχονται από το
+<a href='http://ekt.gr' target='_blank'>
+Εθνικό Κέντρο Τεκμηρίωσης.
+</a>
+</p>
+</div>
+</div>
+<div class='row'>
+<div class='large-8 columns'>
+<div class='row'>
+<div class='large-12 columns text-justify'>
+<h2>Ορισμός ακαδημαϊκής παρουσίας</h2>
+<p>
+Ως ακαδημαϊκή παρουσία ορίζουμε ότι σε ένα έτος σε μια χώρα
+υπάρχει συγγραφέας με ελληνικό όνομα
+ο οποίος έχει γράψει μόνος ή σαν μέρος ομάδας,
+μια ή περισσότερες επιστημονικές δημοσιεύσεις.
+</p>
+<p>
+Για παράδειγμα εάν υπάρχει ένας επιστήμονας ο οποίος έχει
+γράψει σε ένα έτος δημοσιεύσεις σε δύο χώρες θα μετρήσει ότι
+είχε δύο παρουσίες, μια σε κάθε χώρα.
+<br>
+Επίσης, αν κάποιος κάνει μια δημοσίευση σε ένα έτος είτε
+περισσότερες θα μετρήσει σαν μια παρουσία.
+</p>
+<h2>Δεδομένα</h2>
+<p>
+Για να παραχθεί το τελικό σύνολο δεδομένων έχει γίνει
+αυτοματοποιημένη συλλογή μεγάλου μέρους
+επιστημονικών δημοσιεύσεων για τα έτη 2008 - 2015.
+Στη συνέχεια επιλέχθησαν οι εγγραφές με επιστημονικές
+δημοσιεύσεις των οποίων ο συγγραφέας έχει ελληνικό όνομα και
+κάθε δημοσίευση αντιστοιχήθηκε με μια χώρα.
+</p>
+<p class='text-center'>
+<a class='button' href='index.html#visualization' id='bottom-of-page'>πίσω στο χάρτη</a>
+</p>
+</div>
+</div>
+</div>
+<div class='large-4 columns'>
+<div class='callout primary'>
+<h2>Οπτικοποίηση</h2>
+Το σύστημα οπτικοποίησης αποτελείται από τρία διαδραστικά γραφήματα.
+<dl class='text-justify'>
+<dt>Χάρτης</dt>
+<dd>
+Ο χρήστης μπορεί να επιλέξει στο χάρτη μια ή περισσότερες χώρες.
+Τα αποτελέσματα φιλτράρονται με βάση την επιλογή του και το
+γράφημα του χρόνου ανανεώνεται ώστε να παρουσιάζει τα καινούρια
+κάθε φορά δεδομένα.
+</dd>
+<dt>Γράφημα χρόνου</dt>
+<dd>
+Το γράφημα του χρόνου απεικονίζει τα αθροιστικά δεδομένα της
+χώρας ή των χωρών που θα επιλέξει κάθε φορά ο χρήστης.
+</dd>
+<dt>Οριζόντιο ραβδόγραμμα</dt>
+<dd>
+Το οριζόντιο ραβδόγραμμα απεικονίζει τη κατάταξη των χωρών
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
